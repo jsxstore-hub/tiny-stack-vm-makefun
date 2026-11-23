@@ -6,7 +6,7 @@ function run(p: Uint8Array, input: Uint8Array) {
   for (const x of [0,1,2,3,4,5,6,7,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,48,49,50,51,52,64,65,80,81,82,83]) valid[x] = 1;
   imm[1] = 1; imm[2] = 4; imm[48] = imm[49] = imm[50] = imm[51] = 2;
   for (const x of [1,2,82]) delta[x] = 1;
-  need[3]=need[4]=need[17]=need[27]=need[49]=need[50]=need[64]=need[80]=need[81]=need[83]=1;
+  need[3]=need[4]=need[23]=need[27]=need[49]=need[50]=need[64]=need[80]=need[81]=need[83]=1;
   delta[3]=delta[49]=delta[50]=delta[80]=delta[81]=delta[83]=-1;
   delta[4]=1; need[5]=need[6]=2; delta[6]=1; need[7]=3; need[65]=2; delta[65]=-2;
   for (const x of [16,17,18,19,20,21,22,24,25,26,28,29,30,32,33,34]) { need[x]=2; delta[x]=-1; }
